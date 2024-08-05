@@ -10,7 +10,7 @@ import { Home } from './components/Home/Home'
 
 
 let x = createBrowserRouter([
-  {path:'reactapp1' , element:<Layout/> , children: [
+  {path:'/reactapp1' , element:<Layout/> , children: [
     {index:true , element:<Home/> },
     {path: 'About' , element:<About/> },
   {path:'Portfolio' , element:<Portfolio/> },
