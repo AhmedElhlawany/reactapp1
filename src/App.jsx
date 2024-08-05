@@ -7,6 +7,8 @@ import { Portfolio } from './components/Portfolio/Portfolio'
 import { About } from './components/About/About'
 import Layout from './components/Layout/Layout'
 import { Home } from './components/Home/Home'
+
+
 let x = createBrowserRouter([
   {path:'reactapp1' , element:<Layout/> , children: [
     {index:true , element:<Home/> },
