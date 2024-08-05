@@ -18,7 +18,7 @@ export function Contact(){
                 <input type="number" className="my-4 block w-3/4 m-auto h-10" placeholder="userAge"/>
                 <input type="email" className="my-4 block w-3/4 m-auto h-10" placeholder="userEmail"/>
                 <input type="password" className="my-4 block w-3/4 m-auto h-10" placeholder="userPassword"/>
-                <button type="button" class="w-34 focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-lg px-5 py-2.5 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">send Message</button>
+                <button type="button" className="w-34 focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-lg px-5 py-2.5 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">send Message</button>
 
             </div>
         </div>
