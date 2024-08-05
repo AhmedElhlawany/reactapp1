@@ -7,7 +7,7 @@ export function Contact(){
         <>
         <div className="w-full bg-white p-1 text-slate-800 text-center">
             <div className="container w-3/4 m-auto">
-                <h1 className="text-4xl font-bold mt-4">conatct section</h1>
+                <h1 className="text-4xl font-bold mt-4">contact section</h1>
                 <div className='flex justify-center mb-3 mt-3'>
                     <div className='line me-3 bg-slate-900'></div>
                     <i className="fa-solid fa-star text-xl"></i>
