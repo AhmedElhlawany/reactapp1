@@ -13,7 +13,8 @@ export function Contact(){
                     <i className="fa-solid fa-star text-xl"></i>
                     <div className='line ms-3 bg-slate-900'></div>
                 </div>
-                <input type="text" className="my-4 block w-3/4 m-auto h-10" placeholder="userName"/>
+                
+                <input type="text" id='username' className="my-4 block w-3/4 m-auto h-10" placeholder="userName"/>
                 <input type="number" className="my-4 block w-3/4 m-auto h-10" placeholder="userAge"/>
                 <input type="email" className="my-4 block w-3/4 m-auto h-10" placeholder="userEmail"/>
                 <input type="password" className="my-4 block w-3/4 m-auto h-10" placeholder="userPassword"/>
