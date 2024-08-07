@@ -15,40 +15,40 @@ export function Portfolio() {
                     <i className="fa-solid fa-star text-xl"></i>
                     <div className='line ms-3 bg-slate-900'></div>
                 </div>
-                <div className="flex w-3/4 m-auto">
-                    <div className='m-3 rounded-md port1 relative overflow-hidden'>
+                <div className="flex flex-wrap w-3/4 m-auto">
+                    <div className='p-3 rounded-md port1 relative overflow-hidden md:w-1/3'>
                         <img src={p1} className='w-full rounded-md' alt="" />
                         <div className="layer1 rounded-md">
                             <i className="fa-solid fa-plus text-9xl text-white m-auto mt-10"></i>
                         </div>
                     </div>
-                    <div className='m-3 rounded-md relative port2 overflow-hidden'>
+                    <div className='p-3 rounded-md relative port2 overflow-hidden md:w-1/3'>
                         <img src={p2} className='w-full rounded-md' alt="" />
                         <div className="layer2 rounded-md">
                             <i className="fa-solid fa-plus text-9xl text-white m-auto mt-10"></i>
                         </div>
                     </div>
-                    <div className='m-3 rounded-md port3 relative overflow-hidden'>
+                    <div className='p-3 rounded-md port3 relative overflow-hidden md:w-1/3'>
                         <img src={p3} className='w-full rounded-md' alt="" />
                         <div className="layer3 rounded-md">
                             <i className="fa-solid fa-plus text-9xl text-white m-auto mt-10"></i>
                         </div>
                     </div>
                 </div>
-                <div className="flex w-3/4 m-auto">
-                    <div className='m-3 rounded-md port4 relative overflow-hidden'>
+                <div className="flex w-3/4 m-auto flex-wrap">
+                    <div className='p-3 rounded-md port4 relative overflow-hidden md:w-1/3'>
                         <img src={p1} className='w-full rounded-md' alt="" />
                         <div className="layer4 rounded-md">
                             <i className="fa-solid fa-plus text-9xl text-white m-auto mt-10"></i>
                         </div>
                     </div>
-                    <div className='m-3 rounded-md port5 relative overflow-hidden'>
+                    <div className='p-3 rounded-md port5 relative overflow-hidden md:w-1/3'>
                         <img src={p2} className='w-full rounded-md' alt="" />
                         <div className="layer5 rounded-md">
                             <i className="fa-solid fa-plus text-9xl text-white m-auto mt-10"></i>
                         </div>
                     </div>
-                    <div className='m-3 rounded-md port6 relative overflow-hidden'>
+                    <div className='p-3 rounded-md port6 relative overflow-hidden md:w-1/3'>
                         <img src={p3} className='w-full rounded-md ' alt="" />
                         <div className="layer6 rounded-md">
                             <i className="fa-solid fa-plus text-9xl text-white m-auto mt-10"></i>
