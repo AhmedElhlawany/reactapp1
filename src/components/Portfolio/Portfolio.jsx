@@ -1,7 +1,7 @@
-
-import p1 from '../../../images/poert1.png';
-import p2 from '../../../images/port2.png';
-import p3 from '../../../images/port3.png';
+import React from 'react';
+import p2 from './../../assets/images/port2.png';
+import p1 from './../../assets/images/poert1.png';
+import p3 from './../../assets/images/port3.png';
 import './portfolio.css'
 export function Portfolio() {
 

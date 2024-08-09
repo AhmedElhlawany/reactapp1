@@ -1,5 +1,5 @@
 
-import mainPic from '../../../images/avataaars.svg'
+import mainPic from './../../assets/images/avataaars.svg'
 import React from 'react'
 
 export  function Home () {
