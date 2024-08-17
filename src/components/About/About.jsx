@@ -5,7 +5,7 @@ export function About(){
 
     return(
         <>
-         <div className="home bg-emerald-700 w-full text-white text-center h-screen flex items-center ">
+         <div className="home bg-teal-700 w-full text-white text-center h-screen flex items-center ">
         <div className="container w-3/4 m-auto">
           <p className='text-4xl font-extrabold  about'>ABOUT COMPONENT</p>
           <div className='flex justify-center mb-3 mt-3'>

@@ -1,45 +1,126 @@
 import { Link } from "react-router-dom";
 import React from 'react';
+import { useState } from "react";
+import {
+  Navbar,
+  MobileNav,
+  Typography,
+  Button,
+  IconButton,
+  Card,
+} from "@material-tailwind/react";
 
-export function Navbar(){
+export function StickyNavbar() {
+  const [openNav, setOpenNav] = React.useState(false);
 
-    return(
-        <>
-        
+  React.useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => window.innerWidth >= 960 && setOpenNav(false),
+    );
+  }, []);
+  const navList = (
+    <ul className="mt-2 mb-4 flex items-center flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-center">
+      <Typography
+        as="li"
+        variant="small"
+        color="white"
+        className="p-1 font-normal"
+      >
+        <Link to="About" className="flex items-center">
+          About
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="white"
+        className="p-1 font-normal"
+      >
+        <Link to="Portfolio" className="flex items-center">
+        Portfolio
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="white"
+        className="p-1 font-normal"
+      >
+        <Link to="Contact" className="flex items-center">
+        Contact
+        </Link>
+      </Typography>
+      
+    </ul>
+  );
 
-<nav className="bg-slate-700 border-gray-200 dark:bg-gray-900">
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 py-9">
-    <Link to="" className="flex items-center space-x-3 rtl:space-x-reverse">
-        <span className=" text-white text-4xl font-extrabold">Start Framework</span>
-    </Link>
-    <button data-collapse-toggle="navbar-default" type="button"  className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-        <span className="sr-only">Open main menu</span>
-        <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-    <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
-        <li>
-          <Link to="About" className="block py-2 px-3 text-2xl focus:bg-emerald-400 rounded-md ">About</Link>
-        </li>
-        <li>
-          <Link to="Portfolio" className="block py-2 px-3 text-2xl focus:bg-emerald-400 rounded-md ">Portfoio</Link>
-        </li>
-     
-        <li>
-          <Link to="Contact" className="block py-2 px-3 text-2xl focus:bg-emerald-400 rounded-md ">Contact</Link>
-        </li>
-      </ul>
+  return (
+    <div className="bg-indigo-900">
+      <Navbar className="fixed top-0 opacity-100 z-50 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 bg-indigo-900">
+        <div className="flex items-center justify-between text-white w-4/5 m-auto">
+          <Link to="" className="flex items-center">
+            <span className=" text-white text-4xl font-extrabold">Start Framework</span>
+          </Link>
+          <div className="flex items-center gap-4 text-white">
+            <div className="mr-4 hidden lg:block"><ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 "> <li>
+              <Link to="About" className="block py-2 px-3 text-2xl focus:bg-cyan-400 rounded-md ">About</Link>
+            </li>
+              <li>
+                <Link to="Portfolio" className="block py-2 px-3 text-2xl focus:bg-cyan-400 rounded-md ">Portfoio</Link>
+              </li>
+
+              <li>
+                <Link to="Contact" className="block py-2 px-3 text-2xl focus:bg-cyan-400 rounded-md ">Contact</Link>
+              </li></ul></div>
+
+            <IconButton
+              variant="text"
+              className="ml-auto h-6 w-6 text-center m-auto text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              ripple={false}
+              onClick={() => setOpenNav(!openNav)}
+            >
+              {openNav ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  className="h-6 w-6 text-center m-auto"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              )}
+            </IconButton>
+          </div>
+        </div>
+        <MobileNav open={openNav}>
+          {navList}
+          
+        </MobileNav>
+      </Navbar>
+
     </div>
-  </div>
-</nav>
+  );
 
-        
-        
-        
-        
-        
-        </>
-    )
+ 
 }

@@ -7,7 +7,7 @@
     transition: .5s all;
     position: absolute;
     background-color: rgba(0, 128, 128,0.7);
-    z-index: 99999;
+   
     opacity: 0;
 }
 .port1:hover .layer1{
@@ -23,7 +23,7 @@
     transition: .5s all;
     position: absolute;
     background-color: rgba(0, 128, 128,0.7);
-    z-index: 99999;
+   
     opacity: 0;
 }
 .port2:hover .layer2{
@@ -39,7 +39,7 @@
     transition: .5s all;
     position: absolute;
     background-color: rgba(0, 128, 128,0.7);
-    z-index: 99999;
+   
     opacity: 0;
 }
 .port3:hover .layer3{
@@ -55,7 +55,7 @@
     transition: .5s all;
     position: absolute;
     background-color: rgba(0, 128, 128,0.7);
-    z-index: 99999;
+   
     opacity: 0;
 }
 .port4:hover .layer4{
@@ -71,7 +71,7 @@
     transition: .5s all;
     position: absolute;
     background-color: rgba(0, 128, 128,0.7);
-    z-index: 99999;
+   
     opacity: 0;
 }
 .port5:hover .layer5{
@@ -88,7 +88,7 @@
     transition: .5s all;
     position: absolute;
     background-color: rgba(0, 128, 128,0.7);
-    z-index: 99999;
+   
     opacity: 0;
 }
 .port6:hover .layer6{

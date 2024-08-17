@@ -8,7 +8,7 @@ export function Footer(){
 
     return(
         <>
-        <div className='bg-sky-900'>
+        <div className='bg-cyan-900'>
       <div className='flex w-3/4 m-auto flex-wrap'>
         <div className="p-3 md:w-1/3 my-20 text-center item">
           <h2 className='text-3xl font-bold my-2'>LOCATION</h2>
